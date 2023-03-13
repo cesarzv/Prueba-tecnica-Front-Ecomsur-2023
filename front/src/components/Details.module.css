@@ -61,8 +61,8 @@
   top: 30%;
 }
 
-.detName {
-  font-size: 30px;
+.detailParent .detName {
+  font-size: 25px;
 }
 
 .detailPrecio {
