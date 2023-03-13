@@ -57,8 +57,8 @@
   position: absolute;
   right: 3%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  gap: 10%;
 }
 
 .btns button {
@@ -69,4 +69,16 @@
 
 .btns span {
   font-weight: bold;
+}
+
+@media (min-width: 1000px) {
+  .cartContainer {
+    height: 20%;
+  }
+
+  .cartImg img {
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }

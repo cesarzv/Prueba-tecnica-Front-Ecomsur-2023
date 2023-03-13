@@ -27,6 +27,7 @@ Resolucion de la prueba Front End :
 -Dentro del carrito se renderizan los productos en un componente CardProduct que muestra la imagen, nombre, precio y cantidad, asimismo se puede eliminar el producto del carrito y añadir o quitar de uno en uno.
 -Se uso la libreria React Hot Toast para mostrar una alerta cuando se añade o elimina un producto del carrito.
 -En la NavBar se ve un icono del carrito donde muestra en tiempo la real la cantidad de produtos que contiene.
+-Se muestra el rating tanto el la Card del home como en los details.
 
 
 Dependencias instaladas:

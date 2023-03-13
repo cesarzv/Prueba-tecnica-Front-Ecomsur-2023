@@ -1,3 +1,8 @@
+.contt {
+  display: flex;
+  justify-content: center;
+}
+
 .detailCont {
   width: 100%;
   position: absolute;
@@ -5,6 +10,8 @@
 }
 
 .detailParent {
+  display: flex;
+  flex-direction: column;
 }
 
 .detailParent p {
@@ -13,6 +20,15 @@
   margin-left: 15px;
   font-weight: 500;
   font-size: 16px;
+}
+
+.detCont {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  width: 100%;
 }
 
 .rating {
@@ -30,6 +46,8 @@
 
 .detailImg {
   height: 300px;
+
+  width: 100%;
 }
 
 .detailImg img {
@@ -39,6 +57,12 @@
 
 .detailInfo {
   height: 340px;
+  position: absolute;
+  top: 30%;
+}
+
+.detName {
+  font-size: 30px;
 }
 
 .detailPrecio {
@@ -95,7 +119,7 @@
   align-items: center;
 }
 
-.detailCont button {
+.detailInfo button {
   background-color: #1057bad8;
   color: white;
   border-radius: 10px;
@@ -105,4 +129,56 @@
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
+  top: 65%;
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+@media (min-width: 1000px) {
+  .detCont {
+    flex-direction: row;
+  }
+
+  .detailImg {
+    position: absolute;
+    width: 60%;
+    left: 0;
+    top: 0;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .detailInfo {
+    position: absolute;
+    width: 40%;
+    top: 150px;
+    right: 0;
+    height: 400px;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+  }
+
+  .detHeader {
+    width: 40%;
+    height: 150px;
+    position: absolute;
+    left: auto;
+    right: 0;
+  }
+
+  .rating {
+    position: relative;
+    left: 3%;
+  }
+
+  .detailInfo button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-top: 100px;
+  }
 }

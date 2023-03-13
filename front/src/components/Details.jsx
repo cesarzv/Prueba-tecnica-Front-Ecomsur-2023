@@ -32,86 +32,90 @@ export default function Details() {
   console.log(details);
 
   return (
-    <div>
+    <div className={s.contt}>
       <NavBar2 />
 
       <div className={s.detailCont}>
         {details.length ? (
           <div className={s.detailParent}>
-            <p>{details[0].brand}</p>
-            <p>{details[0].name}</p>
-            <div className={s.rating}>
-              {(() => {
-                if (details[0].rating === 5) {
-                  return <h4>★★★★★</h4>;
-                } else if (
-                  details[0].rating === 4 ||
-                  details[0].rating === 4.5
-                ) {
-                  return <h4>★★★★</h4>;
-                } else if (
-                  details[0].rating === 3 ||
-                  details[0].rating === 3.5
-                ) {
-                  return <h4>★★★</h4>;
-                } else if (details[0].rating === 2) {
-                  return <h4>★★</h4>;
-                } else if (details[0].rating === 1) {
-                  return <h4>★</h4>;
-                } else {
-                  return "";
-                }
-              })()}
-              <span>{details[0].rating}</span>
-            </div>
-            <div className={s.detailImg}>
-              <img src={`http://localhost:5000/${details[0].image}`} alt="" />
-            </div>
-            <div className={s.detailInfo}>
-              <div className={s.detailPrecio}>
-                <p>${details[0].price}</p>
-                <span>See the means of payment</span>
+            <div className={s.detHeader}>
+              <p>{details[0].brand}</p>
+              <p className={s.detName}>{details[0].name}</p>
+              <div className={s.rating}>
+                {(() => {
+                  if (details[0].rating === 5) {
+                    return <h4>★★★★★</h4>;
+                  } else if (
+                    details[0].rating === 4 ||
+                    details[0].rating === 4.5
+                  ) {
+                    return <h4>★★★★</h4>;
+                  } else if (
+                    details[0].rating === 3 ||
+                    details[0].rating === 3.5
+                  ) {
+                    return <h4>★★★</h4>;
+                  } else if (details[0].rating === 2) {
+                    return <h4>★★</h4>;
+                  } else if (details[0].rating === 1) {
+                    return <h4>★</h4>;
+                  } else {
+                    return "";
+                  }
+                })()}
+                <span>{details[0].rating}</span>
               </div>
-              <div className={s.envio}>
-                <div className={s.envioIcon}>
-                  <img
-                    style={{ width: "45px", height: "45px" }}
-                    src={truck}
-                    alt=""
-                  ></img>
-                </div>
-                <div>
-                  <p>
-                    Free shipping nationwide. <br></br> Know the times and the
-                    shipping methods. <br></br>
-                    <span>Calculate when it arrives</span>
-                  </p>
-                </div>
+            </div>
+            <div className={s.detCont}>
+              <div className={s.detailImg}>
+                <img src={`http://localhost:5000/${details[0].image}`} alt="" />
               </div>
+              <div className={s.detailInfo}>
+                <div className={s.detailPrecio}>
+                  <p>${details[0].price}</p>
+                  <span>See the means of payment</span>
+                </div>
+                <div className={s.envio}>
+                  <div className={s.envioIcon}>
+                    <img
+                      style={{ width: "45px", height: "45px" }}
+                      src={truck}
+                      alt=""
+                    ></img>
+                  </div>
+                  <div>
+                    <p>
+                      Free shipping nationwide. <br></br> Know the times and the
+                      shipping methods. <br></br>
+                      <span>Calculate when it arrives</span>
+                    </p>
+                  </div>
+                </div>
 
-              <div className={s.devolucion}>
-                <div className={s.devolucionIcon}>
-                  <img
-                    style={{ width: "45px", height: "45px" }}
-                    src={arrow}
-                    alt=""
-                  ></img>
+                <div className={s.devolucion}>
+                  <div className={s.devolucionIcon}>
+                    <img
+                      style={{ width: "45px", height: "45px" }}
+                      src={arrow}
+                      alt=""
+                    ></img>
+                  </div>
+                  <div>
+                    <p>
+                      Free return. <br></br> You have 30 days from when you you
+                      receive. <br></br>
+                      <span>Know more</span>
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p>
-                    Free return. <br></br> You have 30 days from when you you
-                    receive. <br></br>
-                    <span>Know more</span>
-                  </p>
-                </div>
+                <button
+                  onClick={() => handleSubmit(id)}
+                  disabled={details[0].countInStock === 0}
+                >
+                  Add item to cart
+                </button>
               </div>
             </div>
-            <button
-              onClick={() => handleSubmit(id)}
-              disabled={details[0].countInStock === 0}
-            >
-              Add item to cart
-            </button>
           </div>
         ) : (
           ""
