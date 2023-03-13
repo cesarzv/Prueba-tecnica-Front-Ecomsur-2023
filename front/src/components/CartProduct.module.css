@@ -43,6 +43,7 @@
   margin-top: 2%;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .precios {
@@ -65,6 +66,7 @@
   background-color: ghostwhite;
   color: black;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .btns span {
