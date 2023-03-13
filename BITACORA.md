@@ -28,7 +28,8 @@ Resolucion de la prueba Front End :
 -Se uso la libreria React Hot Toast para mostrar una alerta cuando se añade o elimina un producto del carrito.  
 -En la NavBar se ve un icono del carrito donde muestra en tiempo la real la cantidad de produtos que contiene.  
 -Se muestra el rating tanto el la Card del home como en los details.  
--Se realizo diseño responsive tanto para mobile como desktop.
+-Se realizo diseño responsive tanto para mobile como desktop.  
+-Se hizo deploy al proyecto en la plataforma Vercel : https://prueba-tecnica-front-ecomsur-2023.vercel.app/
 
 
 Dependencias instaladas:
