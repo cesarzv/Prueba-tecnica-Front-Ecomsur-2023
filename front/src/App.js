@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Details from "./components/Details";
+import Cart from "./components/Cart";
 
 const App = () => {
   // -------------------------------------------------
@@ -20,10 +24,15 @@ const App = () => {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <h1> Prueba tecnica front Ecomsur 2021</h1>
-      <p>Borra esto y comienza aqui.</p>
+      {/* <h1> Prueba tecnica front Ecomsur 2021</h1> */}
+
       {/* Check to see if express server is running correctly */}
-      <h5>{response}</h5>
+      {/* <h5>{response}</h5> */}
+      <Routes>
+        <Route exact path="/" element={<Home />}></Route>
+        <Route path="/details/:id" element={<Details />}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
+      </Routes>
     </div>
   );
 };

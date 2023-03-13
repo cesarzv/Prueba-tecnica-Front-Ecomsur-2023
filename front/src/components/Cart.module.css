@@ -1,0 +1,25 @@
+.cartCont {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.totalProd {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.totalProd span {
+  font-weight: 500;
+  font-size: 22px;
+}

@@ -1,0 +1,72 @@
+.cartContainer {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 90%;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.cartImg {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartImg img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.cartInfo {
+  width: 70%;
+  padding: 3px 10px;
+}
+
+.cartInfo h2 {
+  font-size: 20px;
+  text-align: left;
+}
+
+.cartPrecio {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.cartContainer button {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: rgba(101, 149, 252, 0.767);
+  margin-right: 2%;
+  margin-top: 2%;
+  color: white;
+  font-weight: bold;
+}
+
+.precios {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.btns {
+  width: 50%;
+  position: absolute;
+  right: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btns button {
+  background-color: ghostwhite;
+  color: black;
+  font-size: 15px;
+}
+
+.btns span {
+  font-weight: bold;
+}

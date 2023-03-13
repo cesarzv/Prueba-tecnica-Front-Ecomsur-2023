@@ -1,0 +1,108 @@
+.detailCont {
+  width: 100%;
+  position: absolute;
+  top: 100px;
+}
+
+.detailParent {
+}
+
+.detailParent p {
+  color: black;
+  text-align: left;
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.rating {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  top: 0;
+  right: 5%;
+}
+
+.rating span {
+  font-weight: bold;
+}
+
+.detailImg {
+  height: 300px;
+}
+
+.detailImg img {
+  width: 380px;
+  border-radius: 5px;
+}
+
+.detailInfo {
+  height: 340px;
+}
+
+.detailPrecio {
+  text-align: left;
+  position: relative;
+  height: 23%;
+}
+
+.detailPrecio p {
+  font-size: 28px;
+}
+
+.detailPrecio span {
+  color: #1057bad8;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
+}
+
+.envio {
+  display: flex;
+  width: 98%;
+  margin-left: 10px;
+}
+
+.envio span {
+  color: #1057bad8;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.envioIcon {
+  display: flex;
+  align-items: center;
+}
+
+.devolucion {
+  display: flex;
+  width: 98%;
+  margin-left: 10px;
+}
+
+.devolucion span {
+  color: #1057bad8;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.devolucionIcon {
+  display: flex;
+  align-items: center;
+}
+
+.detailCont button {
+  background-color: #1057bad8;
+  color: white;
+  border-radius: 10px;
+  width: 80%;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
