@@ -27,6 +27,12 @@ export default function Details() {
     producto.countInStock--;
     dispatch(addToCart(id));
     toast.success("The product was added to the cart");
+
+    // if (!productInCart) {
+    //   return toast.success("The product was added to the cart");
+    // } else {
+    //   return toast.error("The product is already in the cart");
+    // }
   };
 
   console.log(details);
