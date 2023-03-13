@@ -6,6 +6,7 @@
   cursor: pointer;
   transition: all 0.3s;
   border-radius: 10px;
+  position: relative;
 }
 
 .cardContainer:hover {
@@ -39,5 +40,15 @@
   font-size: 22px;
   font-weight: bold;
   text-align: left;
+  color: black;
+}
+
+.ratingCard {
+  position: absolute;
+  bottom: 3%;
+  right: 6%;
+}
+
+.ratingCard h4 {
   color: black;
 }

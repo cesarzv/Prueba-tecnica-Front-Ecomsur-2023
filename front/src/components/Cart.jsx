@@ -15,7 +15,7 @@ export default function Cart() {
     <div>
       <NavBar2 />
       <div className={s.cartCont}>
-        {cart ? (
+        {cart.length ? (
           cart.map((c) => {
             return (
               <CartProduct
@@ -30,11 +30,11 @@ export default function Cart() {
             );
           })
         ) : (
-          <p>No tienes productos en tu carrito</p>
+          <p>You have no items in your cart</p>
         )}
       </div>
       <div className={s.totalProd}>
-        <span>Total : ${totalProd}</span>
+        <span>Total : ${totalProd.toFixed(2)}</span>
       </div>
     </div>
   );

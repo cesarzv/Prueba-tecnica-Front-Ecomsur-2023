@@ -15,6 +15,7 @@ export default function Cards({ productos }) {
                 image={p.image}
                 brand={p.brand}
                 price={p.price}
+                rating={p.rating}
               />
             );
           })
